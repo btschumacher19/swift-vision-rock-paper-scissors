@@ -8,6 +8,7 @@
 ![Demo](demo/demo.gif)
 
 </div>
+
 ## Game Instructions:
 
  * Once the hand overlay is displayed, make an OK sign to initialize the round (:ok_hand:).
