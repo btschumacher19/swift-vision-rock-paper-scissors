@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="iOS_Vision_HandPose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CameraView" customModule="iOS_Vision_HandPose" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNH-mT-eGL">
+                                <rect key="frame" x="44" y="156" width="60.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60.5" id="U46-Ai-ODY"/>
+                                    <constraint firstAttribute="height" constant="40" id="byW-RS-3HM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQ6-KV-Ugk">
+                                <rect key="frame" x="309.5" y="156" width="60.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60.5" id="QnP-Jj-bit"/>
+                                    <constraint firstAttribute="height" constant="40" id="qmV-xt-e6a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👌 TO START" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTa-oe-Gwr">
+                                <rect key="frame" x="104.5" y="54" width="205.5" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="CT8-Th-0Fb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP ANYWHERE TO RESET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H14-dA-qCm">
+                                <rect key="frame" x="94" y="437.5" width="226" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="6I0-dR-nhy"/>
+                                    <constraint firstAttribute="height" constant="21" id="B4S-yh-Huj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cTa-oe-Gwr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8DP-Sr-Kfl"/>
+                            <constraint firstItem="H14-dA-qCm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ETT-IB-PhA"/>
+                            <constraint firstItem="DNH-mT-eGL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="HWP-13-IOv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qQ6-KV-Ugk" secondAttribute="trailing" constant="44" id="JDY-7r-0Ts"/>
+                            <constraint firstItem="qQ6-KV-Ugk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="JpF-2w-83X"/>
+                            <constraint firstItem="H14-dA-qCm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Twj-aT-kvb"/>
+                            <constraint firstItem="cTa-oe-Gwr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="a7I-si-M2z"/>
+                            <constraint firstItem="H14-dA-qCm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dVS-Ax-lRL"/>
+                            <constraint firstItem="H14-dA-qCm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hyM-Xx-w6n"/>
+                            <constraint firstItem="DNH-mT-eGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="kQR-CQ-SXI"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Zhx-BZ-TMe" appends="YES" id="V5K-Fl-ciW"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="cpuGesture" destination="qQ6-KV-Ugk" id="Gnr-Pj-I2y"/>
+                        <outlet property="resetInstruction" destination="H14-dA-qCm" id="MRB-SF-8ec"/>
+                        <outlet property="topHeaderText" destination="cTa-oe-Gwr" id="6LH-E6-WZA"/>
+                        <outlet property="userGesture" destination="DNH-mT-eGL" id="wEL-BG-POW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Zhx-BZ-TMe">
+                    <connections>
+                        <action selector="resetBoard:" destination="BYZ-38-t0r" id="Lzh-ai-6cY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-845" y="90"/>
+        </scene>
+    </scenes>
+</document>
