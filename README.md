@@ -1,4 +1,6 @@
-# swift-vision-rock-paper-scissors
-A rock paper scissors game played with computer vision.
+
+A Rock Paper Scissors app, played against your device with computer vision.
+
+-----
 
 ![Demo](demo/demo.gif)
